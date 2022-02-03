@@ -19,7 +19,6 @@ public class MyArray {
     public void deleteRandomElement() {
         long[] result = new long[array.length - 1];
         int randomPosition = (int) (Math.random() * array.length);
-        array[randomPosition] = 0;
 
         System.arraycopy(array, 0, result, 0, randomPosition);
         System.arraycopy(array, randomPosition + 1, result, randomPosition, array.length - randomPosition - 1);
